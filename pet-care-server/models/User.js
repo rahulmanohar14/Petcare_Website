@@ -8,12 +8,12 @@ const userSchema = new mongoose.Schema({
   },
   password: {
     type: String,
-    required: true
+    required: truea
   },
   role: {
     type: String,
-    default: 'user' // other values: admin, vet, etc.
+    default: 'user'
   }
-});
+}, { timestamps: true }); // Automatically adds createdAt and updatedAt
 
 module.exports = mongoose.model('User', userSchema);
