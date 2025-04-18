@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './style.css';
 
 function ForgotPassword() {
@@ -39,6 +40,20 @@ function ForgotPassword() {
             justify-content: center;
             align-items: center;
             z-index: 1;
+            flex-direction: column;
+          }
+
+          .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 999;
+          }
+
+          .logo img {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
           }
 
           .login-box {
@@ -101,6 +116,10 @@ function ForgotPassword() {
       </style>
 
       <div className="overlay">
+        <Link to="/" className="logo">
+          <img src="/logo.png" alt="PetCare Logo" />
+        </Link>
+
         <div className="login-box">
           <h2>Reset Your Password</h2>
           <form onSubmit={handleSubmit}>
