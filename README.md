@@ -4,8 +4,7 @@ PetCare is a full-featured, role-based web application designed to streamline pe
 
 ---
 
-## 🌐 Live Demo
-> _Coming Soon_
+🌐 **Live Demo**: https://petcare-website-app.vercel.app
 
 ---
 
